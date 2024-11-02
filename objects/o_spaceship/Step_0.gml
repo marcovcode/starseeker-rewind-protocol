@@ -9,5 +9,9 @@ if is_moving_diagonally diagonal_speed_multiplier = 0.707
 speed_x = horizontal_keys * diagonal_speed_multiplier * current_speed
 speed_y = vertical_keys * diagonal_speed_multiplier * current_speed
 
+// collisions
+if place_meeting(x + speed_x, y, o_collision) speed_x = 0
+if place_meeting(x, y + speed_y, o_collision) speed_y = 0
+
 x += speed_x
 y += speed_y
