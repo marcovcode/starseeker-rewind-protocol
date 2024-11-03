@@ -1,6 +1,7 @@
 // shooting
 if shooting_timer <= 0 {
-    show_debug_message("shooting")
+    bullet = instance_create_layer(x, y + sprite_height / 2, "Bullets", o_bullet)
+	bullet.direction = 270
     shooting_timer = random_range(min_shooting_time, max_shooting_time) * room_speed
 } else {
     shooting_timer -= 1

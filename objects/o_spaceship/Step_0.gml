@@ -19,5 +19,6 @@ y += speed_y
 // shooting
 shoot_key_pressed = keyboard_check_pressed(ord(" "))
 if shoot_key_pressed {
-	instance_create_layer(x + sprite_width / 2, y - sprite_height / 2, "Spaceship", o_bullet)
+	bullet = instance_create_layer(x + sprite_width / 2, y - sprite_height / 2, "Bullets", o_bullet)
+	bullet.direction = 90
 }
