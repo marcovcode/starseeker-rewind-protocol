@@ -22,4 +22,5 @@ shoot_key_pressed = keyboard_check_pressed(ord(" "))
 if shoot_key_pressed {
 	bullet = instance_create_layer(x + sprite_width / 2, y - sprite_height / 2, "Bullets", o_bullet)
 	bullet.direction = 90
+	bullet.shooter = o_spaceship
 }
