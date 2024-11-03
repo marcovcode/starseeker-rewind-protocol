@@ -9,5 +9,5 @@ if shooting_timer <= 0 {
 // colliding with spaceship
 if place_meeting(x, y, o_spaceship) show_debug_message("game over")
 
-// destroying
+// destruction
 if has_been_destroyed instance_destroy()

@@ -1,4 +1,4 @@
-// destroy enemies
+// destroying enemies
 enemy = instance_place(x, y, o_enemy);
 if enemy != noone enemy.has_been_destroyed = true
 
