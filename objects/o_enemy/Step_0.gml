@@ -1,7 +1,3 @@
-// movement
-speed = current_speed
-direction = 270
-
 // shooting
 if shooting_timer <= 0 {
     show_debug_message("shooting")

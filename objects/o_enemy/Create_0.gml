@@ -1,6 +1,6 @@
 // movement
-base_speed = 1
-current_speed = base_speed
+speed = 1
+direction = 270
 
 // shooting
 min_shooting_time = 0.5
