@@ -10,7 +10,7 @@ if shooting_timer <= 0 {
 }
 
 // colliding with spaceship
-if place_meeting(x, y, o_spaceship) show_debug_message("game over")
+if place_meeting(x, y, o_spaceship) o_spaceship.has_been_destroyed = true
 
 // destruction
 if has_been_destroyed {

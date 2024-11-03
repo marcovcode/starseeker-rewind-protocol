@@ -7,7 +7,7 @@ if enemy != noone and shooter = o_spaceship {
 
 // destroying spaceship
 if place_meeting(x, y, o_spaceship) and shooter = o_enemy {
-	show_debug_message("game over")
+	o_spaceship.has_been_destroyed = true
 	instance_destroy()
 }
 
