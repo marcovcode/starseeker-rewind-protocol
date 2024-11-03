@@ -1,2 +1,2 @@
-speed = 10
+speed = 6
 direction = 90
