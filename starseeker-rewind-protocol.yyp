@@ -34,10 +34,12 @@
   },
   "name":"starseeker-rewind-protocol",
   "resources":[
+    {"id":{"name":"o_bullet","path":"objects/o_bullet/o_bullet.yy",},},
     {"id":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},},
     {"id":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},},
     {"id":{"name":"o_spaceship","path":"objects/o_spaceship/o_spaceship.yy",},},
     {"id":{"name":"r_game","path":"rooms/r_game/r_game.yy",},},
+    {"id":{"name":"s_bullet","path":"sprites/s_bullet/s_bullet.yy",},},
     {"id":{"name":"s_collision","path":"sprites/s_collision/s_collision.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
     {"id":{"name":"s_spaceship","path":"sprites/s_spaceship/s_spaceship.yy",},},

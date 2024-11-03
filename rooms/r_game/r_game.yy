@@ -12,6 +12,10 @@
     {"name":"inst_68C4F0D4","path":"rooms/r_game/r_game.yy",},
     {"name":"inst_749141E3","path":"rooms/r_game/r_game.yy",},
     {"name":"inst_BA59CF1","path":"rooms/r_game/r_game.yy",},
+    {"name":"inst_7401C2A0","path":"rooms/r_game/r_game.yy",},
+    {"name":"inst_60F0EE29","path":"rooms/r_game/r_game.yy",},
+    {"name":"inst_30C01DC8","path":"rooms/r_game/r_game.yy",},
+    {"name":"inst_44EC8004","path":"rooms/r_game/r_game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -20,6 +24,10 @@
       ],"layers":[],"name":"Spaceship","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_BA59CF1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_BA59CF1","objectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":21.0,"y":27.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7401C2A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7401C2A0","objectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":59.0,"y":27.0,},
+        {"$GMRInstance":"v1","%Name":"inst_60F0EE29","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_60F0EE29","objectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":101.0,"y":27.0,},
+        {"$GMRInstance":"v1","%Name":"inst_30C01DC8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30C01DC8","objectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":145.0,"y":27.0,},
+        {"$GMRInstance":"v1","%Name":"inst_44EC8004","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_44EC8004","objectId":{"name":"o_bullet","path":"objects/o_bullet/o_bullet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":92.0,"y":261.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Collisions","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_7C99D32F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7C99D32F","objectId":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":20.0,"x":-16.0,"y":0.0,},
