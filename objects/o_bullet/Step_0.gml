@@ -11,5 +11,5 @@ if place_meeting(x, y, o_spaceship) {
 	instance_destroy()
 }
 
-// destroying self
+// destroying when out of boundaries
 if y < 0 - sprite_height or y > room_height + sprite_height instance_destroy()

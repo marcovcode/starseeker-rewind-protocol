@@ -16,3 +16,6 @@ if has_been_destroyed {
 	part_system_position(explosion, x, y)
 	instance_destroy()
 }
+
+// destroying when out of boundaries
+if y > room_height + sprite_height instance_destroy()
