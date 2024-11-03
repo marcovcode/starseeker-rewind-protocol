@@ -10,4 +10,8 @@ if shooting_timer <= 0 {
 if place_meeting(x, y, o_spaceship) show_debug_message("game over")
 
 // destruction
-if has_been_destroyed instance_destroy()
+if has_been_destroyed {
+	explosion = part_system_create(p_explosion)
+	part_system_position(explosion, x, y)
+	instance_destroy()
+}
