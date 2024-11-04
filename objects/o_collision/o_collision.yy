@@ -32,5 +32,5 @@
     "path":"sprites/s_collision/s_collision.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

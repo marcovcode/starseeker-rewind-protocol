@@ -45,6 +45,7 @@
     {"id":{"name":"s_collision","path":"sprites/s_collision/s_collision.yy",},},
     {"id":{"name":"s_enemy_spawner","path":"sprites/s_enemy_spawner/s_enemy_spawner.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
+    {"id":{"name":"s_rewind_bar_border","path":"sprites/s_rewind_bar_border/s_rewind_bar_border.yy",},},
     {"id":{"name":"s_spaceship","path":"sprites/s_spaceship/s_spaceship.yy",},},
   ],
   "resourceType":"GMProject",
