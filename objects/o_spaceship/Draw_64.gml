@@ -1,1 +1,1 @@
-draw_rectangle(8, 296, 7 + 164 * current_rewind_capacity, 311, false)
+draw_rectangle(8, 296, 7 + 164 * current_rewind_capacity, 311, false);

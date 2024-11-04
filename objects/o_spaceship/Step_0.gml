@@ -33,14 +33,10 @@ if has_been_destroyed {
 }
 
 // rewind
-rewind_key = keyboard_check(vk_enter)
+rewind_key = keyboard_check(vk_enter);
 
 if rewind_key {
-	if current_rewind_capacity > 0 {
-		current_rewind_capacity -= 1 / game_get_speed(gamespeed_fps)
-	}
+    current_rewind_capacity = max(0, current_rewind_capacity - (1 / game_get_speed(gamespeed_fps)))
 } else {
-	if current_rewind_capacity < 1 {
-		current_rewind_capacity += 0.05 / game_get_speed(gamespeed_fps)
-	}
+    current_rewind_capacity = min(1, current_rewind_capacity + (0.05 / game_get_speed(gamespeed_fps)))
 }
