@@ -33,7 +33,7 @@ if has_been_destroyed {
 }
 
 // rewind
-rewind_key = keyboard_check(vk_enter);
+rewind_key = keyboard_check(vk_enter)
 
 if rewind_key {
 	// implement rewind code
