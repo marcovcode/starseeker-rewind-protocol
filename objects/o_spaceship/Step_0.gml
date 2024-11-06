@@ -19,13 +19,15 @@ if o_rewind.is_rewinding {
 	speed_y = 0
 }
 
-x += speed_x
-y += speed_y
+if not has_been_destroyed {
+	x += speed_x
+	y += speed_y
+}
 
 // shooting
 shoot_key_pressed = keyboard_check_pressed(ord(" "))
 
-if shoot_key_pressed and not o_rewind.is_rewinding {
+if shoot_key_pressed and not o_rewind.is_rewinding and not has_been_destroyed {
 	bullet = instance_create_layer(x, y - sprite_height / 2, "Bullets", o_bullet)
 	bullet.direction = 90
 	bullet.shooter = o_spaceship

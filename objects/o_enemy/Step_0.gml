@@ -1,5 +1,5 @@
 // shooting
-if shooting_timer <= 0 {
+if shooting_timer <= 0 and not has_been_destroyed {
     bullet = instance_create_layer(x, y + sprite_height / 2, "Bullets", o_bullet)
 	bullet.direction = 270
 	bullet.shooter = o_enemy
@@ -10,12 +10,12 @@ if shooting_timer <= 0 {
 }
 
 // colliding with spaceship
-if place_meeting(x, y, o_spaceship) o_spaceship.has_been_destroyed = true
+if place_meeting(x, y, o_spaceship) and not has_been_destroyed o_spaceship.has_been_destroyed = true
 
 // destruction
 if has_been_destroyed {
 	image_alpha = 0
-	
+
 	if not has_exploded {
 		has_exploded = true
 		explosion = part_system_create(p_explosion)
@@ -24,7 +24,7 @@ if has_been_destroyed {
 }
 
 // destroying when out of boundaries
-if y > room_height + sprite_height image_alpha = 0
+if y > room_height + sprite_height instance_destroy()
 
 // rewind
 steps_size = ds_list_size(steps_data)
