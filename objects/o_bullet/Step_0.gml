@@ -20,17 +20,10 @@ if spaceship != noone and not spaceship.has_been_destroyed and shooter = o_enemy
 if y < 0 - sprite_height or y > room_height + sprite_height instance_destroy()
 
 // rewind
-steps_size = ds_list_size(steps_data)
+to_rewind = [x, y, image_alpha, has_been_destroyed]
+rewind(to_rewind)
 
-if o_rewind.is_rewinding and steps_size + rewind_time > 0 {
-	rewind_time--
-
-	arr = steps_data[|steps_size + rewind_time]
-	x = arr[0]
-	y = arr[1]
-	image_alpha = arr[2]
-	has_been_destroyed = arr[3]
-} else if not o_rewind.is_rewinding {
-	rewind_time = 0
-	ds_list_add(steps_data, [x, y, image_alpha, has_been_destroyed]);
-}
+x = to_rewind[0]
+y = to_rewind[1]
+image_alpha = to_rewind[2]
+has_been_destroyed = to_rewind[3]

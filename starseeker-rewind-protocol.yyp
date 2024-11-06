@@ -43,6 +43,7 @@
     {"id":{"name":"o_spaceship","path":"objects/o_spaceship/o_spaceship.yy",},},
     {"id":{"name":"p_explosion","path":"particles/p_explosion/p_explosion.yy",},},
     {"id":{"name":"r_game","path":"rooms/r_game/r_game.yy",},},
+    {"id":{"name":"scr_rewind","path":"scripts/scr_rewind/scr_rewind.yy",},},
     {"id":{"name":"s_bullet","path":"sprites/s_bullet/s_bullet.yy",},},
     {"id":{"name":"s_collision","path":"sprites/s_collision/s_collision.yy",},},
     {"id":{"name":"s_enemy_spawner","path":"sprites/s_enemy_spawner/s_enemy_spawner.yy",},},

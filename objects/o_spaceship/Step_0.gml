@@ -45,19 +45,11 @@ if has_been_destroyed {
 }
 
 // rewind
-steps_size = ds_list_size(steps_data)
+to_rewind = [x, y, image_alpha, has_been_destroyed, has_exploded]
+rewind(to_rewind)
 
-if o_rewind.is_rewinding and steps_size + rewind_time > 0 {
-	rewind_time--
-
-	arr = steps_data[|steps_size + rewind_time]
-	x = arr[0]
-	y = arr[1]
-	current_speed = arr[2]
-	has_been_destroyed = arr[3]
-	has_exploded = arr[4]
-	image_alpha = arr[5]
-} else if not o_rewind.is_rewinding {
-	rewind_time = 0
-	ds_list_add(steps_data, [x, y, current_speed, has_been_destroyed, has_exploded, image_alpha]);
-}
+x = to_rewind[0]
+y = to_rewind[1]
+image_alpha = to_rewind[2]
+has_been_destroyed = to_rewind[3]
+has_exploded = to_rewind[4]
