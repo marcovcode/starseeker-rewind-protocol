@@ -7,5 +7,5 @@ if rewind_key {
 	else is_rewinding = false
 } else {
 	is_rewinding = false
-    current_rewind_capacity = min(1, current_rewind_capacity + (0.05 / game_get_speed(gamespeed_fps)))
+    current_rewind_capacity = min(base_rewind_capacity, current_rewind_capacity + (0.05 / game_get_speed(gamespeed_fps)))
 }
