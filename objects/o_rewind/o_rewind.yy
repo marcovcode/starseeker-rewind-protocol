@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_rewind",
-    "path":"sprites/s_rewind/s_rewind.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

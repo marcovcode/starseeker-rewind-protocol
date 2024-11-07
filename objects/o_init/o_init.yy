@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_init",
-    "path":"sprites/s_init/s_init.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
