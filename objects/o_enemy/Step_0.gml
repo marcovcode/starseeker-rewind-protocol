@@ -1,11 +1,11 @@
 // shooting
-if shooting_timer <= 0 and not has_been_destroyed {
+if shooting_timer <= 0 and not has_been_destroyed and not o_rewind.is_rewinding {
     bullet = instance_create_layer(x, y + sprite_height / 2, "Bullets", o_bullet)
 	bullet.direction = 270
 	bullet.shooter = o_enemy
 
     shooting_timer = random_range(min_shooting_time, max_shooting_time) * game_get_speed(gamespeed_fps)
-} else {
+} else if not o_rewind.is_rewinding {
     shooting_timer--
 }
 
