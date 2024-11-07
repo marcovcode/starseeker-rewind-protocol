@@ -1,13 +1,5 @@
-horizontal_keys = keyboard_check(ord("D")) - keyboard_check(ord("A"))
-vertical_keys = keyboard_check(ord("S")) - keyboard_check(ord("W"))
-
-// diagonal movement
-diagonal_speed_multiplier = 1
-is_moving_diagonally = horizontal_keys != 0 and vertical_keys != 0
-if is_moving_diagonally diagonal_speed_multiplier = 0.707
-
-speed_x = horizontal_keys * diagonal_speed_multiplier * current_speed
-speed_y = vertical_keys * diagonal_speed_multiplier * current_speed
+speed_x = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * _speed
+speed_y = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * _speed
 
 // collisions
 if place_meeting(x + speed_x, y, o_collision) speed_x = 0
@@ -33,23 +25,31 @@ if shoot_key_pressed and not o_rewind.is_rewinding and not has_been_destroyed {
 	bullet.shooter = o_spaceship
 }
 
-// destruction
+// destroying itself
 if has_been_destroyed {
 	image_alpha = 0
-	
+
 	if not has_exploded {
 		has_exploded = true
-		explosion = part_system_create(p_explosion)
-		part_system_position(explosion, x, y)
+
+		if not o_rewind.is_rewinding {
+			explosion = part_system_create(p_explosion)
+			part_system_position(explosion, x, y)
+		}
 	}
+
+    destroy_timer--
+    if destroy_timer <= 0 instance_destroy()
+} else {
+	image_alpha = 1
 }
 
 // rewind
-to_rewind = [x, y, image_alpha, has_been_destroyed, has_exploded]
+to_rewind = [x, y, has_been_destroyed, has_exploded]
+
 rewind(to_rewind)
 
 x = to_rewind[0]
 y = to_rewind[1]
-image_alpha = to_rewind[2]
-has_been_destroyed = to_rewind[3]
-has_exploded = to_rewind[4]
+has_been_destroyed = to_rewind[2]
+has_exploded = to_rewind[3]

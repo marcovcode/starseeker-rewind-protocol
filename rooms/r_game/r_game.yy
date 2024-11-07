@@ -6,14 +6,14 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_1AA4949","path":"rooms/r_game/r_game.yy",},
+    {"name":"inst_1490661F","path":"rooms/r_game/r_game.yy",},
     {"name":"inst_7C99D32F","path":"rooms/r_game/r_game.yy",},
     {"name":"inst_68C4F0D4","path":"rooms/r_game/r_game.yy",},
     {"name":"inst_749141E3","path":"rooms/r_game/r_game.yy",},
     {"name":"inst_5105802E","path":"rooms/r_game/r_game.yy",},
     {"name":"inst_5AE09697","path":"rooms/r_game/r_game.yy",},
     {"name":"inst_252C6714","path":"rooms/r_game/r_game.yy",},
-    {"name":"inst_1490661F","path":"rooms/r_game/r_game.yy",},
+    {"name":"inst_1AA4949","path":"rooms/r_game/r_game.yy",},
   ],
   "isDnd":false,
   "layers":[

@@ -2,6 +2,7 @@
 speed = 6
 
 // destruction
+destroy_timer = o_rewind.rewind_capacity
 has_been_destroyed = false
 
 // rewind
