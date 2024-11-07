@@ -9,6 +9,8 @@ if not has_been_destroyed {
 	if enemy != noone and not enemy.has_been_destroyed and shooter = o_spaceship {
 		has_been_destroyed = true
 		enemy.has_been_destroyed = true
+		
+		score++
 	}
 
 	// spaceship
@@ -36,5 +38,3 @@ rewind(to_rewind)
 x = to_rewind[0]
 y = to_rewind[1]
 has_been_destroyed = to_rewind[2]
-
-show_debug_message(destroy_timer)
