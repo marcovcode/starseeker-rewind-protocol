@@ -1,7 +1,7 @@
 if score % 5 = 0 and not score = 0 and not score = last_score_checked {
 	// changing difficulty
-    min_spawn_time = max(0.5, min_spawn_time - 0.2)
-    max_spawn_time = max(1, max_spawn_time - 0.2)
+    min_spawn_time = max(shortest_min_spawn_time, min_spawn_time - 0.2)
+    max_spawn_time = max(shortest_max_spawn_time, max_spawn_time - 0.2)
     last_score_checked = score
 }
 

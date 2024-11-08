@@ -10,8 +10,6 @@ has_exploded = false
 steps_data = ds_list_create()
 rewind_time = 0
 
-image_index = 2
-
 // difficulty
 if image_index = 0 {
 	speed = 1
