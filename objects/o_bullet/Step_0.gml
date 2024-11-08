@@ -10,7 +10,7 @@ if not has_been_destroyed {
 		has_been_destroyed = true
 		enemy.has_been_destroyed = true
 		
-		score++
+		score += enemy.destruction_score
 	}
 
 	// spaceship
