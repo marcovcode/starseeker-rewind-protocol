@@ -1,0 +1,1 @@
+if is_paused draw_sprite(s_pause_screen, 0, 0, 0)
