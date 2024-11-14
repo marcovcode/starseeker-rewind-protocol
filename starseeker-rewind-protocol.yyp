@@ -48,6 +48,7 @@
     {"id":{"name":"r_game","path":"rooms/r_game/r_game.yy",},},
     {"id":{"name":"r_title_screen","path":"rooms/r_title_screen/r_title_screen.yy",},},
     {"id":{"name":"scr_rewind","path":"scripts/scr_rewind/scr_rewind.yy",},},
+    {"id":{"name":"seq_title","path":"sequences/seq_title/seq_title.yy",},},
     {"id":{"name":"s_bullet","path":"sprites/s_bullet/s_bullet.yy",},},
     {"id":{"name":"s_collision","path":"sprites/s_collision/s_collision.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
