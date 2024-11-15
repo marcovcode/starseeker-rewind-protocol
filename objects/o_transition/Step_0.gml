@@ -1,0 +1,1 @@
+if room = target_room and image_index = 0 instance_destroy()
