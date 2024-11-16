@@ -13,3 +13,6 @@ has_exploded = false
 // rewind
 steps_data = ds_list_create()
 rewind_time = 0
+
+// transition
+is_transitioning = false

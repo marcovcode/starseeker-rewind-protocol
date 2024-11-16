@@ -5,7 +5,7 @@ speed_y = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * _speed
 if place_meeting(x + speed_x, y, o_collision) speed_x = 0
 if place_meeting(x, y + speed_y, o_collision) speed_y = 0
 
-//sStopping if rewinding
+// stopping if rewinding
 if o_rewind.is_rewinding {
     speed_x = 0
     speed_y = 0
@@ -42,13 +42,19 @@ if has_been_destroyed {
     }
 
     destroy_timer--
-    if destroy_timer <= 0 instance_destroy()
+
+    if destroy_timer <= 0 and not is_transitioning {
+		is_transitioning = true
+		
+		transition = instance_create_depth(0, 0, -9999, o_transition)
+		transition.target_room = r_game_over
+	}
 } else {
     image_alpha = 1
 }
 
 // rewind functionality
-to_rewind = [x, y, has_been_destroyed, has_exploded]
+to_rewind = [x, y, has_been_destroyed, has_exploded, destroy_timer]
 
 rewind(to_rewind)
 
@@ -56,3 +62,4 @@ x = to_rewind[0]
 y = to_rewind[1]
 has_been_destroyed = to_rewind[2]
 has_exploded = to_rewind[3]
+destroy_timer = to_rewind[4]
