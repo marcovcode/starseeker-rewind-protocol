@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"o_press_to_start",
+  "%Name":"o_press_to_play",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_press_to_start",
+  "name":"o_press_to_play",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_press_to_start",
-    "path":"sprites/s_press_to_start/s_press_to_start.yy",
+    "name":"s_press_to_play",
+    "path":"sprites/s_press_to_play/s_press_to_play.yy",
   },
   "spriteMaskId":null,
   "visible":true,
