@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_rewind",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_rewind_bar_border",
+  "eventList":[],
   "managed":true,
-  "name":"o_rewind",
+  "name":"o_rewind_bar_border",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_rewind_bar_border",
+    "path":"sprites/s_rewind_bar_border/s_rewind_bar_border.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
