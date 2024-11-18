@@ -34,11 +34,12 @@
   },
   "name":"starseeker-rewind-protocol",
   "resources":[
-    {"id":{"name":"f_joystix","path":"fonts/f_joystix/f_joystix.yy",},},
+    {"id":{"name":"f_apple_ii_pro","path":"fonts/f_apple_ii_pro/f_apple_ii_pro.yy",},},
     {"id":{"name":"o_bullet","path":"objects/o_bullet/o_bullet.yy",},},
     {"id":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},},
     {"id":{"name":"o_enemy_spawner","path":"objects/o_enemy_spawner/o_enemy_spawner.yy",},},
     {"id":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},},
+    {"id":{"name":"o_high_score","path":"objects/o_high_score/o_high_score.yy",},},
     {"id":{"name":"o_init","path":"objects/o_init/o_init.yy",},},
     {"id":{"name":"o_pause","path":"objects/o_pause/o_pause.yy",},},
     {"id":{"name":"o_press_to_play","path":"objects/o_press_to_play/o_press_to_play.yy",},},

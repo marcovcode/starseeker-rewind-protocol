@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"f_joystix",
+  "%Name":"f_apple_ii",
   "AntiAlias":0,
   "applyKerning":0,
   "ascender":10,
@@ -190,7 +190,7 @@
   "last":0,
   "lineHeight":13,
   "maintainGms1Font":false,
-  "name":"f_joystix",
+  "name":"f_apple_ii",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
