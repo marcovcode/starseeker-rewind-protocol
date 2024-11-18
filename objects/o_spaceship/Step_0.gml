@@ -44,8 +44,11 @@ if has_been_destroyed {
     destroy_timer--
 
     if destroy_timer <= 0 and not is_transitioning {
-		is_transitioning = true
+		// high score
+		if score > load_high_score() save_high_score(score)
 		
+		// transition
+		is_transitioning = true
 		transition = instance_create_depth(0, 0, -9999, o_transition)
 		transition.target_room = r_game_over
 	}
